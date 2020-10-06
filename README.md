@@ -5,4 +5,4 @@ A virus created using c++ will affect the master boot record
 - if you want to test this virus test it on your vm(virtual machine)
 - tool author is not responsible for any damage
 - tool is created by krisna pranav
-<img src="code.png"></img>
+ 
