@@ -6,3 +6,5 @@ A virus created using c++ will affect the master boot record
 - tool author is not responsible for any damage
 - tool is created by krisna pranav
  
+## License:
+- powerfullvirus is licensed under [GPL-3.0](https://github.com/krishpranav/powerfullvirus/blob/master/LICENSE)
